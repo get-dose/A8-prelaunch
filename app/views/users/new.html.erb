@@ -1,12 +1,76 @@
-<div class="hero">
-  <p class="large brandon">Harry&#8217;s is live</p>
-  <p class="small brandon">Respecting the Face and Wallet<br>Since Like...Right Now.</p>
+<div class="dose1">
+  <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+  <svg class="comingsvg" width="374px" height="179px" viewBox="0 0 374 179" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>A8 is coming - content</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+      <text id="text-1" font-family="Akrobat-Regular, Akrobat" font-size="60" font-weight="normal">
+        <tspan x="2.124" y="72" fill="#D4D3D5">A</tspan>
+        <tspan x="35.1" y="72" fill="#FF3434">8</tspan>
+        <tspan x="67.932" y="72" fill="#D4D3D5"> IS COMING</tspan>
+      </text>
+      <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+        <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+        <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+        <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+      </filter>
+      <text id="text-3" font-family="Akrobat-Regular, Akrobat" font-size="30" font-weight="normal" line-spacing="49" fill="#D4D3D5">
+        <tspan x="0" y="132">protein designed for you</tspan>
+        <tspan x="0" y="181">since right about…now.</tspan>
+      </text>
+      <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+        <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+        <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+        <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+      </filter>
+    </defs>
+    <g id="page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g id="Desktop-HD-Copy" transform="translate(-176.000000, -166.000000)">
+        <g id="A8-is-coming---content" transform="translate(179.000000, 148.000000)">
+          <g id="A8-IS-COMING" fill-opacity="1" fill="#D4D3D5">
+            <use filter="url(#filter-2)" xlink:href="#text-1"></use>
+            <use xlink:href="#text-1"></use>
+          </g>
+          <g id="protein-designed-for" fill-opacity="1" fill="#D4D3D5">
+            <use filter="url(#filter-4)" xlink:href="#text-3"></use>
+            <use xlink:href="#text-3"></use>
+          </g>
+          <path d="M0.5,91.5 L368.5,91.5" id="Line" stroke="#2A667F" stroke-width="5" stroke-linecap="square"></path>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <div class="form-wrap clearfix <%= "ended" if Rails.application.config.ended %>">
+    <div class="square-logo">
+      <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+      <svg width="126px" height="101px" viewBox="0 0 126 101" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <!-- Generator: Sketch 39 (31667) - http://www.bohemiancoding.com/sketch -->
+        <title>3-square-logo</title>
+        <desc>Created with Sketch.</desc>
+        <defs></defs>
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="3-square-logo" transform="translate(1.000000, 0.000000)" stroke-width="5">
+            <g id="page-1">
+              <g id="Desktop-HD-Copy">
+                <g id="footer">
+                  <g id="3SquareLogo">
+                    <rect id="Rectangle-43-Copy-4" stroke="#8DF41C" transform="translate(84.894053, 39.912805) rotate(-45.000000) translate(-84.894053, -39.912805) " x="57.1655821" y="12.5566124" width="55.4569425" height="54.7123847" rx="5"></rect>
+                    <rect id="Rectangle-43-Copy-6" stroke="#FF3434" transform="translate(39.028887, 50.391540) rotate(-45.000000) translate(-39.028887, -50.391540) " x="11.4290593" y="23.1622644" width="55.1996556" height="54.4585521" rx="4"></rect>
+                    <path d="M81.1020287,25.7552565 C83.0548066,23.8024786 86.2236484,23.8052419 88.1696437,25.7512372 L120.320028,57.9016216 C122.270586,59.8521797 122.263104,63.0221411 120.316009,64.9692366 L88.7001448,96.5851006 C86.747367,98.5378785 83.5785252,98.5351151 81.6325299,96.5891199 L49.4821454,64.4387354 C47.5315874,62.4881773 47.5390692,59.3182159 49.4861647,57.3711205 L81.1020287,25.7552565 L81.1020287,25.7552565 Z" id="Rectangle-43-Copy-5" stroke="#D4D3D5"></path>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <% if Rails.application.config.ended %>
+        <%= render "users/campaign_ended" %>
+    <% else %>
+        <%= render "users/campaign_ongoing" %>
+    <% end %>
+  </div>
 </div>
 
-<div class="form-wrap clearfix <%= "ended" if Rails.application.config.ended %>">
-  <% if Rails.application.config.ended %>
-    <%= render "users/campaign_ended" %>
-  <% else %>
-    <%= render "users/campaign_ongoing" %>
-  <% end %>
-</div>
