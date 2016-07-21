@@ -4,7 +4,7 @@ form {
 
 @font-face {
   font-family: "Akrobat";
-  src: url("fonts/Akrobat-Regular.otf");
+  src: url(asset-path("fonts/Akrobat-Regular.otf"));
 }
 
 .clearfix:before,
