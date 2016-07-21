@@ -2,6 +2,11 @@ form {
   margin-bottom: 0;
 }
 
+@font-face {
+  font-family: "Akrobat";
+  src: url("fonts/Akrobat-Regular.otf");
+}
+
 .clearfix:before,
 .clearfix:after {
   content: " "; /* 1 */
