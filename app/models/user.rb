@@ -11,6 +11,7 @@ class User < ActiveRecord::Base
   validates :referral_code, uniqueness: true
 
   before_create :create_referral_code
+  before_create :add_to_list
   after_create :send_welcome_email
 
   REFERRAL_STEPS = [
@@ -35,6 +36,16 @@ class User < ActiveRecord::Base
       'class' => 'five'
     }
   ]
+
+  def add_to_list
+    list_id = "0dc41e8596"
+    @gb = Gibbon::Request.new(api_key: ENV["MAILCHIMP_API_KEY"])
+    subscribe = @gb.lists(list_id).members.create(body: {
+      email_address: self.email,
+      status: 'subscribed',
+      double_optin: false
+      })
+  end
 
   private
 
