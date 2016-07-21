@@ -17,30 +17,22 @@ class User < ActiveRecord::Base
     {
       'count' => 5,
       'html' => 'Dose shaker<br>bottle',
-      'class' => 'two',
-      'image' =>  ActionController::Base.helpers.asset_path(
-        'refer/cream-tooltip@2x.png')
+      'class' => 'two'
     },
     {
       'count' => 10,
       'html' => '1 bottle<br>A8',
-      'class' => 'three',
-      'image' => ActionController::Base.helpers.asset_path(
-        'refer/truman@2x.png')
+      'class' => 'three'
     },
     {
       'count' => 25,
       'html' => 'DOSE Baseball<br>hat',
-      'class' => 'four',
-      'image' => ActionController::Base.helpers.asset_path(
-        'refer/winston@2x.png')
+      'class' => 'four'
     },
     {
       'count' => 50,
       'html' => 'One Year 15%<br>discount on A8',
-      'class' => 'five',
-      'image' => ActionController::Base.helpers.asset_path(
-        'refer/blade-explain@2x.png')
+      'class' => 'five'
     }
   ]
 
