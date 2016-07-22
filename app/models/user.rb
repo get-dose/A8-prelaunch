@@ -40,10 +40,12 @@ class User < ActiveRecord::Base
   def add_to_list
     list_id = "ff98cb726d"
     @gb = Gibbon::Request.new(api_key: ENV["MAILCHIMP_API_KEY"])
+    refer_me = 'http://dose-a8.herokuapp.com/?ref=' + self.referral_code
     subscribe = @gb.lists(list_id).members.create(body: {
       email_address: self.email,
       status: 'subscribed',
-      double_optin: false
+      double_optin: false,
+      merge_fields: { REFERRAL_E: refer_me}
       })
   end
 
@@ -54,6 +56,6 @@ class User < ActiveRecord::Base
   end
 
   def send_welcome_email
-    UserMailer.delay.signup_email(self)
+    # UserMailer.delay.signup_email(self)
   end
 end
