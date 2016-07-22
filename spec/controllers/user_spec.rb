@@ -2,7 +2,7 @@ require 'rails_helper'
 require 'securerandom'
 
 def generate_email
-  "#{SecureRandom.hex}@example.com"
+  "#{SecureRandom.hex}@aol.com"
 end
 
 describe UsersController, type: :controller do
@@ -80,7 +80,7 @@ describe UsersController, type: :controller do
     end
 
     it 'has a referrer when referred' do
-      referrer_email = "#{SecureRandom.hex}@example.com"
+      referrer_email = "#{SecureRandom.hex}@gmail.com"
       referrer = User.create(email: referrer_email)
       cookies[:h_ref] = referrer.referral_code
 
