@@ -7,6 +7,26 @@ form {
   src: url(asset-path("fonts/Akrobat-Regular.otf"));
 }
 
+@font-face {
+  font-family: "Akrobat-Bold";
+  src: url(asset-path("fonts/Akrobat-Bold.otf"));
+}
+
+@font-face {
+  font-family: "Akrobat-ExtraLight";
+  src: url(asset-path("fonts/Akrobat-ExtraLight.otf"));
+}
+
+@font-face {
+  font-family: "Akrobat-ExtraBold";
+  src: url(asset-path("fonts/Akrobat-ExtraBold.otf"));
+}
+
+@font-face {
+  font-family: "Akrobat-Light";
+  src: url(asset-path("fonts/Akrobat-Light.otf"));
+}
+
 .clearfix:before,
 .clearfix:after {
   content: " "; /* 1 */
