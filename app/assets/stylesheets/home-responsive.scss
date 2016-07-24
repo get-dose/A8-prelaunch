@@ -1,0 +1,62 @@
+@media screen and (max-width: 500px) {
+  #home .dose1 {
+    width: 100%;
+    height: 1000px;
+    background: image-url("home/page_1_mobile_background.png") center center no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    letter-spacing: .09em;
+    margin: 0 auto;
+  }
+
+  .comingsvg {
+    display: none;
+  }
+
+  .comingsvg-mobile {
+    display: block;
+    margin: 0 auto;
+    margin-top: 1em;
+  }
+
+  #home .form-wrap {
+    width: 100%;
+    margin: 23px auto 0;
+    position: absolute;
+    bottom: 0;
+    background: rgba(41, 102, 126, 0.90);
+  }
+
+  #home form {
+    display: flex;
+  }
+
+  #home .form-wrap .email, #home .form-wrap .submit {
+    display: inline-block;
+    float: left;
+  }
+
+  #home .form-wrap .email {
+    margin-left: 10%;
+    width: 50%;
+  }
+
+  #home .form-wrap .submit {
+    width: 30%;
+    padding-left: .25em;
+    padding-right: .25em;
+    font-size: 1em;
+  }
+
+  .footer-line {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+}
+
+@media screen and (min-width: 500px) {
+  .comingsvg-mobile {
+    display: none;
+  }
+}
