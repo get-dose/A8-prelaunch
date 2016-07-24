@@ -62,7 +62,7 @@
                     <table style="margin: 0 auto; padding: 0; width: 200px; font-family: 'Helvetica Neue-Light', 'Helvetica Neue Light', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif; font-size: 0; color: #CCC; font-weight: normal; background: white; text-align: center;" width='200' cellspacing='0' cellpadding='0' align="center" bgcolor="#FFFFFF">
                         <tr>
                             <td width="80" align="right">
-                                <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(Rails.application.config.action_mailer.default_url_options || "") %>?ref=<%= CGI::escape(@user.referral_code) %>&title=Harrys" style="outline: 0; border: 0;" target="_blank">
+                                <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(Rails.application.config.action_mailer.default_url_options || "") %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(@facebook_message) %>" style="outline: 0; border: 0;" target="_blank">
                                     <img src="<%= Rails.application.config.action_mailer.default_url_options %>/assets/facebook.jpg" alt="Share on Facebook" style="display: block; margin: 0; padding: 0; border: 0;">
                                 </a>
                             </td>
