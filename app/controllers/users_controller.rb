@@ -69,7 +69,7 @@ class UsersController < ApplicationController
     # their ip after their ip appears three times in the database.
 
 
-    address = request.remote_ip
+    address = request.ip
     puts '$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$'
     puts address
     return if address.nil?
