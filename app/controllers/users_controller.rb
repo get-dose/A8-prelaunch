@@ -69,9 +69,7 @@ class UsersController < ApplicationController
     # their ip after their ip appears three times in the database.
 
 
-    address = request.ip
-    puts '$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$'
-    puts address
+    address = request.env['HTTP_X_FORWARDED_FOR']
     return if address.nil?
 
     current_ip = IpAddress.find_by_address(address)
