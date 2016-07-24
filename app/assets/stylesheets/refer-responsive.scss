@@ -1,18 +1,35 @@
 // MOBILE/RESPONSIVE FOR REFER
 
-#refer .prizes {
+#refer .prizes-mobile {
   width: 100%;
   background: rgba(212, 211, 213, 0.85);
   border-top: 1px solid #D2D1C8;
   padding-bottom: 20px;
+  display: table;
 }
 
-#refer .prizes .page-content {
+@media screen and (min-width: 500px) {
+    #refer .prizes-mobile {
+        display: none;
+    }
+
+    #refer .share-wrap svg.mobile {
+      display: none;
+    }
+
+}
+
+#refer .share-wrap svg.mobile {
+    margin-left: 7%;
+}
+
+#refer .prizes-mobile .page-content {
   position: relative;
-  width: 85%;
+  width: 100%;
+  height: 38em;
 }
 
-#refer .prizes .callout {
+#refer .prizes-mobile .callout {
   text-align: center;
   font-size: 2em;
   color: #2a667f;
@@ -22,90 +39,89 @@
   text-transform: uppercase;
 }
 
-#refer .prizes .progress {
-  height: 4px;
-  width: 100%;
-  background: image-url("refer/progress-bg.png") 0 0 repeat-x;
-  background-size: 1px 4px;
+#refer .prizes-mobile .progress {
+  height: 30em;
+  width: 4px;
+  background: image-url("refer/progress-bg-vert.png") 0 0 repeat-y;
+  background-size: 4px 1px;
   position: absolute;
-  top: 115px;
+  top: 3em;
+  left: 50%;
   z-index: 0;
+  margin: 0 auto;
 }
 
-#refer .prizes .progress .mover {
+#refer .prizes-mobile .progress .mover {
   position: absolute;
   top: 0;
   left: 0;
+  height: 100%;
 }
 
-#refer .prizes .progress .mover .bar {
-  background: image-url("refer/progress-done.png") 0 0 repeat-x;
-  width: 165px;
-  height: 4px;
-  -webkit-background-size: 1px 4px;
-  background-size: 1px 4px;
+#refer .prizes-mobile .progress .mover .bar {
+  background: image-url("refer/progress-done-vert.png") 0 0 repeat-y;
+  width: 4px;
+  height: 15%;
+  -webkit-background-size: 4px 1px;
+  background-size: 4px 1px;
 }
 
 #refer .prize-two .progress .mover .bar {
-  width: 312px;
+  height: 28%;
 }
 
 #refer .prize-three .progress .mover .bar {
-  width: 566px;
+  width: 50%;
 }
 
 #refer .prize-four .progress .mover .bar {
-  width: 820px;
+  width: 73%;
 }
 
 #refer .prize-five .progress .mover .bar {
-  width: 1120px;
+  width: 100%;
 }
 
-#refer .prizes ul.products {
-  height: 105px;
+#refer .prizes-mobile ul.products {
   width: 100%;
-  margin-top: 30px;
+  margin-top: 1em;
   position: relative;
   z-index: 1;
+  display:table;
 }
 
-#refer .prizes .products li.title {
-  height: 100%;
+#refer .prizes-mobile .products li.title {
   text-transform: uppercase;
   color: #074E6F;
   font-weight: 500;
   font-size: 14px;
-  float: left;
-  margin-right: 68px;
-  width: 165px;
+  margin-right: 0px;
+  font-weight: bold;
+  text-align: center;
+  margin-left: -5px;
+  padding-bottom: 2em;
+}
+
+#refer .prizes-mobile .products li.title .friends {
+  letter-spacing: 2px;
+  font-size: 1.5em;
   font-weight: bold;
 }
 
-#refer .prizes .products li.title .friends {
-  margin-top: 7px;
+#refer .prizes-mobile .products li.title .rewards {
   letter-spacing: 2px;
   font-size: 1.5em;
-  font-weight: 100;
+  font-weight: bold;
 }
 
-#refer .prizes .products li.title .rewards {
-  margin-top: 1.5em;
-  letter-spacing: 2px;
-  font-size: 1.5em;
-  font-weight: 100;
-}
-
-#refer .prizes .products li.product {
-  height: 100%;
+#refer .prizes-mobile .products li.product {
   color: #074E6F;
-  width: 125px;
-  margin-right: 129px;
-  float: left;
+  margin: 0;
   position: relative;
+  padding-bottom: 2.5em;
 }
 
-#refer .prizes .products li.product .circle {
+#refer .prizes-mobile .products li.product .circle {
   height: 30px;
   width: 30px;
   border-radius: 15px;
@@ -118,14 +134,14 @@
   margin: 0 auto;
 }
 
-#refer .prizes .products li.product .sep {
+#refer .prizes-mobile .products li.product .sep {
   width: 12px;
   height: 2px;
   background: transparent;
   margin: 13px auto 13px;
 }
 
-#refer .prizes .products li.product .caret {
+#refer .prizes-mobile .products li.product .caret {
   width: 100%;
   height: 10px;
   background: image-url("refer/caret.png") center center no-repeat;
@@ -134,41 +150,41 @@
   bottom: -15px;
 }
 
-#refer .prizes .products li.product.selected .caret {
+#refer .prizes-mobile .products li.product.selected .caret {
   background: image-url("refer/caret-selected.png") center center no-repeat;
   background-size: 16px 10px;
 }
 
-#refer .prizes .products li.product p {
-  text-align: center;
+#refer .prizes-mobile .products li.product p {
+  text-align: left;
   font-weight: 500;
 }
 
-#refer .prizes .products li.product:last-child {
+#refer .prizes-mobile .products li.product:last-child {
+  padding-bottom: 0;
+}
+
+#refer .prizes-mobile .products li.product.last {
   margin-right: 0;
 }
 
-#refer .prizes .products li.product.last {
-  margin-right: 0;
-}
-
-#refer .prizes .products li.product.selected .circle {
+#refer .prizes-mobile .products li.product.selected .circle {
   background: #995F5E !important;
   border-color: #995F5E !important;
   color: #FFF !important;
 }
 
-#refer .prizes .products li.product.selected p {
+#refer .prizes-mobile .products li.product.selected p {
   color: #995F5E !important;
 }
 
-#refer .prizes .products li.product:hover .circle {
+#refer .prizes-mobile .products li.product:hover .circle {
   color: #FFF;
   background: #074E6F;
   border-color: #074E6F;
 }
 
-#refer .prizes .products li.product .tooltip {
+#refer .prizes-mobile .products li.product .tooltip {
   height: 254px;
   width: 190px;
   border: 4px solid #074E6F;
@@ -179,16 +195,16 @@
   background: #FFF;
 }
 
-#refer .prizes .products li.product .tooltip img {
+#refer .prizes-mobile .products li.product .tooltip img {
   margin: 0 auto;
   display: block;
 }
 
-#refer .prizes .products li.product:hover .tooltip {
+#refer .prizes-mobile .products li.product:hover .tooltip {
   display: block;
 }
 
-#refer .prizes p.place {
+#refer .prizes-mobile p.place {
   text-align: center;
   font-size: 16px;
   color: #074E6F;
@@ -197,11 +213,11 @@
   margin-top: 30px;
 }
 
-#refer .prizes p.place span {
+#refer .prizes-mobile p.place span {
   color: #995F5E;
 }
 
-#refer .prizes p.check {
+#refer .prizes-mobile p.check {
   text-align: center;
   font-size: 16px;
   color: #858181;

@@ -12,12 +12,9 @@
   <meta property="og:title" content="A8 is coming!"/>
   <meta property="og:description" content="A8 is upgrading nutrition. Didn’t want to leave you all behind. Check out A8 here."/>
   <meta property="og:url" content="<%= root_url %>"/>
+  <meta name="viewport" content="width=device-width">
   <% if @is_mobile %>
-    <% if @bodyId == 'home' %>
-      <meta name="viewport" content="width=1600" />
-    <% else %>
-      <meta name="viewport" content="width=1120" />
-    <% end %>
+
   <% end %>
   <%= stylesheet_link_tag "application", :media => "all" %>
   <%= csrf_meta_tags %>

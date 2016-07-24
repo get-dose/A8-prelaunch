@@ -315,7 +315,7 @@ body {
   text-align: center;
   letter-spacing: .13em;
   background: rgba(41, 102, 126, 0.9);
-  padding: 0;
+  padding-bottom: 1em;
   margin: 2em;
 }
 
@@ -356,7 +356,7 @@ body {
   border: 1px solid #D1D0C7;
   background: #FFF;
   padding: 10px 0;
-  width: 320px;
+  width: 80%;
   text-transform: none;
   font-size: 11px;
   margin: 20px auto 0;
@@ -380,6 +380,29 @@ body {
   background: rgba(212, 211, 213, 0.85);
   border-top: 1px solid #D2D1C8;
   padding-bottom: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    #refer .prizes {
+        display: none;
+    }
+
+    #refer .share-wrap svg.non-mobile {
+      display: none;
+    }
+
+    #refer .mammoth .need {
+      font-size: 4em;
+    }
+
+    ul.products {
+      margin-top: 0;
+    }
+
+  #refer .header .content svg {
+    margin-top: 5%;
+  }
+
 }
 
 #refer .prizes .page-content {
