@@ -11,6 +11,7 @@ gem 'unicorn'
 gem 'therubyracer'
 gem 'gibbon'
 gem 'mandrill-api'
+gem 'font-awesome-sass'
 
 
 # Gems used only for assets and not required

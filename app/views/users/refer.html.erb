@@ -15,7 +15,7 @@
                   <tspan x="168.1" y="43">Nutrition</tspan>
                   <tspan x="167" y="77">Solutions</tspan>
                 </text>
-                <text id="DOSE" stroke="#D4D3D5" font-family="Akrobat-Bold, Akrobat" font-size="75" font-weight="bold" fill-opacity="0" fill="#2A667F">
+                <text id="DOSE" stroke="#D4D3D5" font-family="Akrobat-Bold, Akrobat" font-size="75" fill-opacity="0" fill="#2A667F">
                   <tspan x="0" y="75">DOSE</tspan>
                 </text>
                 <path d="M169.5,48.5 L263.5,48.5" id="Line" stroke="#8DF41C" stroke-linecap="square"></path>
@@ -66,7 +66,7 @@
                 <tspan x="87.5675" y="168" fill="#D4D3D5">Invite Friends &amp;</tspan>
                 <tspan x="591.3625" y="176.305" font-family="Akrobat-ExtraBold, Akrobat" font-weight="600" fill="#2A667F" fill-opacity="0"></tspan>
                 <tspan x="31" y="241" fill="#D4D3D5">Earn </tspan>
-                <tspan x="179.41" y="237.685" font-family="Akrobat-Bold, Akrobat" font-weight="bold" fill="#D4D3D5" fill-opacity="0">DOSE</tspan>
+                <tspan x="179.41" y="237.685" font-family="Akrobat-Bold, Akrobat" fill="#D4D3D5" fill-opacity="0">DOSE</tspan>
                 <tspan x="358.76" y="241" fill="#D4D3D5"> Product</tspan>
               </text>
             </g>
@@ -112,6 +112,10 @@
               </g>
             </g>
           </svg>
+        </a>
+
+        <a href="mailto:?subject=A8 is coming&body=Hey! A8 is upgrading nutrition with a new essential amino acid workout formula. I didn’t want to leave you behind. You can check A8 out right here: <%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %> and even win free protein and Dose products when you share the news with your friends.  Cheers!">
+          <i style="color: white; vertical-align: super; margin-left: .5em" class="fa fa-envelope-o fa-3x" aria-hidden="true"></i>
         </a>
       </div>
     </div>
