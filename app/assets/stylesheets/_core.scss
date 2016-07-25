@@ -58,6 +58,7 @@ body {
   width: 100%;
   height: 100%;
   background: image-url("home/page_1_background.png") center center no-repeat;
+  background-size: 100% 100%;
   position: relative;
   letter-spacing: .09em;
   margin: 0 auto;
@@ -66,7 +67,6 @@ body {
 #refer .dose2 {
   width: 100%;
   background: image-url("refer/page_2_background.png") center center no-repeat fixed;
-  background-size: 100% 100%;
   position: relative;
   letter-spacing: .09em;
   margin: 0 auto;
