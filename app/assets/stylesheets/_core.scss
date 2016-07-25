@@ -66,8 +66,9 @@ body {
 
 #refer .dose2 {
   width: 100%;
-  background: image-url("refer/page_2_background.png") center center no-repeat fixed;
+  background: image-url("refer/page_2_background.png") center center no-repeat;
   position: relative;
+  background-size: cover;
   letter-spacing: .09em;
   margin: 0 auto;
 }
