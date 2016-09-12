@@ -17,22 +17,22 @@ class User < ActiveRecord::Base
   REFERRAL_STEPS = [
     {
       'count' => 5,
-      'html' => 'Dose shaker<br>bottle',
+      'html' => "50% off<br>first bottle",
       'class' => 'two'
     },
     {
       'count' => 10,
-      'html' => '1 bottle<br>A8',
+      'html' => '1 free<br>bottle',
       'class' => 'three'
     },
     {
       'count' => 25,
-      'html' => 'DOSE Baseball<br>hat',
+      'html' => '10% off for<br>1 year',
       'class' => 'four'
     },
     {
       'count' => 50,
-      'html' => 'One Year 15%<br>discount on A8',
+      'html' => '15% off for<br>1 year',
       'class' => 'five'
     }
   ]
