@@ -40,7 +40,7 @@ class User < ActiveRecord::Base
   def add_to_list
     list_id = "ff98cb726d"
     @gb = Gibbon::Request.new(api_key: ENV["MAILCHIMP_API_KEY"])
-    refer_me = 'http://dose.solutions/?ref=' + self.referral_code
+    refer_me = 'http://www.dose.solutions/?ref=' + self.referral_code
     subscribe = @gb.lists(list_id).members.create(body: {
       email_address: self.email,
       status: 'subscribed',
